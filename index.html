@@ -11,342 +11,371 @@
   </head>
   <body>
     <div class="main bg-gray-50 marcellusSerif">
-        <header class="py-6 sm:py-12">
-          <div class="mx-auto max-w-7xl px-4 sm:px-12 lg:px-8 xl:px-16">
-            <div class="flex flex-wrap justify-between lg:items-center">
-              <div class="relative z-30 flex w-full items-center justify-between overflow-hidden lg:w-auto">
-                <a href="/">
-                  <img
-                    class="h-8 w-8"
-                    src="images/ALT.svg"
-                    alt="alt img"
-                    width="120"
-                    height="120"
-                  />
-                </a>
-                <button
-                  aria-label="humburger"
-                  id="hamburger"
-                  class={`-mr-6 p-6 lg:hidden ${
-                    isMenuOpen ? "bg-primary" : ""
-                  }`}
-                  onClick={handleMenuClick}
-                >
-                  <div
-                    aria-hidden="true"
-                    class="jumbotron m-auto h-0.5 w-6 rounded bg-dark transition duration-300"
-                  ></div>
-                  <div
-                    aria-hidden="true"
-                    class="jumbotron m-auto mt-2 h-0.5 w-6 rounded bg-dark transition duration-300"
-                  ></div>
-                </button>
-              </div>
-              <div
-                id="navas"
-                class={`fixed inset-0 z-20 h-full w-full items-center justify-center bg-white/90 backdrop-blur-3xl lg:static lg:block lg:h-auto lg:w-auto lg:bg-transparent lg:backdrop-blur-none ${
-                  isMenuOpen ? "block" : "hidden"
-                }`}
-              >
-                <ul class="group flex justify-auto sm:justify-center flex-col items-center gap-6 font-serif text-lg text-gray-600 lg:flex-row lg:gap-0 lg:font-sans lg:text-sm md:h-auto sm:h-screen">
-                  <li class="text-right transition duration-500 group-hover:text-gray-300 lg:text-left">
-                    <a
-                      href="/"
-                      class="block py-1 px-6 hover:text-gray-800"
-                    >
-                      Work
-                    </a>
-                  </li>
-                  <li class="text-right transition duration-500 group-hover:text-gray-300 lg:text-left">
-                    <a
-                      href="#"
-                      class="block py-1 px-6 hover:text-gray-800"
-                    >
-                      Services
-                    </a>
-                  </li>
-                  <li class="text-right transition duration-500 group-hover:text-gray-300 lg:text-left">
-                    <a
-                      href="#"
-                      class="block py-1 px-6 hover:text-gray-800"
-                    >
-                      About
-                    </a>
-                  </li>
-                  <li class="text-right lg:pl-6 lg:text-left">
-                    <a
-                      href="#"
-                      class="group flex h-9 items-center overflow-hidden rounded border border-gray-400 py-1 px-4 text-sm text-primary transition-all duration-300 hover:rounded-md hover:border-primary hover:bg-primary hover:text-white"
-                    >
-                      <span class="relative flex items-center">
-                        Contact
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          strokeWidth="1.5"
-                          stroke="currentColor"
-                          class="group-hover:translate-x-2 h-4 w-4 translate-x-1 duration-300"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                          ></path>
-                        </svg>
-                      </span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </header>
-        <main>
-          <section class="pt-12 sm:pt-20 md:pt-32">
-            <div class="mx-auto max-w-7xl px-4 sm:px-12 lg:px-8 xl:px-16">
-              <h1 class="text-4xl font-bold text-gray-800 sm:text-5xl sm:leading-snug lg:text-6xl lg:leading-tight">
-                We build better <span class="text-[#5B483D]"> products</span>
-                to help our clients build better companies.
-              </h1>
-              <div class="mt-12 sm:mt-24">
-                <a
-                  href="/pages/about.html"
-                  class="relative border-b py-3 font-serif text-xl before:absolute before:inset-x-0 before:bottom-0 before:h-px before:origin-right before:scale-x-0 before:bg-primary before:transition before:duration-300 hover:before:origin-left hover:before:scale-x-100"
-                >
-                  <span class="text-gray-600">About us</span>
-                </a>
-              </div>
-            </div>
-          </section>
-
-          <section>
-            <div class="my-24 mx-auto px-2 sm:px-4 lg:px-4 xl:max-w-7xl xl:gap-x-24 xl:px-0 2xl:max-w-[90rem]">
-              <div class="grid gap-4 sm:grid-cols-8 sm:gap-y-12 lg:gap-x-16 lg:gap-y-32">
-                <a href="/pages/project.html" class="group sm:col-span-4">
-                  <div class="overflow-hidden rounded-md transition-all duration-300 group-hover:rounded-xl">
-                    <img
-                      class="h-full w-full object-cover brightness-95 transition duration-300 group-hover:scale-105"
-                      src="images/img1.webp"
-                      alt="project cover"
-                      width="1000"
-                      height="1000"
-                    />
-                  </div>
-                  <div class="p-2 sm:p-4">
-                    <h2 class="text-lg font-medium text-gray-700 duration-300 hover:text-primary">
-                      Higher Ground School
-                    </h2>
-                    <span class="mt-1 text-sm text-gray-500">
-                      Network of schools
-                    </span>
-                  </div>
-                </a>
-                <a
-                  href="#"
-                  class="group flex flex-col sm:col-span-4 lg:mt-8 xl:mt-16"
-                >
-                  <div class="order-last p-2 sm:order-first sm:p-4">
-                    <h2 class="text-lg font-medium text-gray-700 duration-300 hover:text-primary">
-                      Higher Ground School
-                    </h2>
-                    <span class="mt-1 text-sm text-gray-500">
-                      Network of schools
-                    </span>
-                  </div>
-                  <div class="overflow-hidden rounded-md transition-all duration-300 group-hover:rounded-xl">
-                    <img
-                      class="h-full w-full object-cover transition duration-300 group-hover:scale-105"
-                      src="images/img2.webp"
-                      alt="project cover"
-                      width="1380"
-                      height="1380"
-                    />
-                  </div>
-                </a>
-                <a
-                  href="#"
-                  class="group col-span-full lg:col-span-5"
-                >
-                  <div class="h-[30rem] overflow-hidden rounded-md transition-all duration-300 group-hover:rounded-xl">
-                    <img
-                      class="h-full w-full object-cover transition duration-300 group-hover:scale-105"
-                      src="images/img3.webp"
-                      alt="project cover"
-                      width="1800"
-                      height="1201"
-                    />
-                  </div>
-                  <div class="order-last p-2 sm:order-first sm:p-4">
-                    <h2 class="text-lg font-medium text-gray-700 duration-300 hover:text-primary">
-                      Higher Ground School
-                    </h2>
-                    <span class="mt-1 text-sm text-gray-500">
-                      Network of schools
-                    </span>
-                  </div>
-                </a>
-                <a
-                  href="#"
-                  class="group col-span-full flex flex-col sm:row-start-4 lg:col-span-3 lg:row-start-auto"
-                >
-                  <div class="order-last p-2 sm:p-4 lg:order-first">
-                    <h2 class="text-lg font-medium text-gray-700 duration-300 hover:text-primary">
-                      Higher Ground School
-                    </h2>
-                    <span class="mt-1 text-sm text-gray-500">
-                      Network of schools
-                    </span>
-                  </div>
-                  <div class="overflow-hidden rounded-md transition-all duration-300 group-hover:rounded-xl lg:h-[30rem]">
-                    <img
-                      class="h-full w-full object-cover transition duration-300 group-hover:scale-105"
-                      src="images/img4.webp"
-                      alt="project cover"
-                      width="826"
-                      height="1156"
-                    />
-                  </div>
-                </a>
-                <a href="#" class="group sm:col-span-4">
-                  <div class="overflow-hidden rounded-md transition-all duration-300 group-hover:rounded-xl">
-                    <img
-                      class="h-full w-full object-cover transition duration-300 group-hover:scale-105"
-                      src="images/img5.webp"
-                      alt="project cover"
-                      width="826"
-                      height="1239"
-                    />
-                  </div>
-                  <div class="p-2 sm:p-4">
-                    <h2 class="text-lg font-medium text-gray-700 duration-300 hover:text-primary">
-                      Higher Ground School
-                    </h2>
-                    <span class="mt-1 text-sm text-gray-500">
-                      Network of schools
-                    </span>
-                  </div>
-                </a>
-                <a
-                  href=""
-                  class="group flex flex-col sm:col-span-4 lg:mt-8 xl:mt-16"
-                >
-                  <div class="order-last p-2 sm:order-first sm:p-4">
-                    <h2 class="text-lg font-medium text-gray-700 duration-300 hover:text-primary">
-                      Higher Ground School
-                    </h2>
-                    <span class="mt-1 text-sm text-gray-500">
-                      Network of schools
-                    </span>
-                  </div>
-                  <div class="overflow-hidden rounded-md transition-all duration-300 group-hover:rounded-3xl">
-                    <img
-                      class="h-full w-full object-cover transition duration-300 group-hover:scale-105"
-                      src="images/img6.webp"
-                      alt="project cover"
-                      width="826"
-                      height="1239"
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </section>
-
-          <section class="border-t border-b border-b-gray-100 py-32 group relative">
-            <div class="mx-auto max-w-7xl px-4 sm:px-12 lg:px-8 xl:px-16">
-              <h2 class="text-center text-lg font-medium text-gray-600">
-                Parlons de votre projet
-              </h2>
-              <a
-                href="mailto:hello@tailus.io"
-                class="relative mt-4 block text-center text-5xl font-thin transition-all duration-500 hover:tracking-wide sm:text-7xl"
-              >
-                <span class="font-serif text-gray-700 transition duration-700 hover:bg-gradient-to-r hover:from-secondary hover:to-primary hover:bg-clip-text hover:text-transparent group-hover:text-[#5B483D]">
-                  hello@tailus.io
-                </span>
-              </a>
-            </div>
-          </section>
-        </main>
-        <footer class="bg-white pt-6">
-          <div class="mx-auto max-w-7xl divide-y px-4 sm:px-12 lg:px-8 xl:px-16">
-            <div class="flex flex-col items-center justify-between gap-6 pb-6 sm:flex-row">
-              <a href="/" class="block w-max">
+      <header class="py-6 sm:py-12">
+        <div class="mx-auto max-w-7xl px-4 sm:px-12 lg:px-8 xl:px-16">
+          <div class="flex flex-wrap justify-between lg:items-center">
+            <div
+              class="relative z-30 flex w-full items-center justify-between overflow-hidden lg:w-auto"
+            >
+              <a href="/">
                 <img
-                  class="h-8 w-8"
-                  src="images/ALT.svg"
+                  class="h-20 w-20 rounded-full"
+                  src="images/ALT.avif"
                   alt="alt img"
                   width="120"
                   height="120"
                 />
               </a>
-              <ul class="group items-center justify-center gap-0 text-center text-sm text-gray-600 sm:flex lg:gap-0">
-                <li class="transition duration-500 group-hover:text-gray-300">
-                  <a href="/" class="block py-1 px-3 hover:text-gray-800">
-                    Work
+              <button
+                aria-label="humburger"
+                id="hamburger"
+                class="-mr-6 p-6 lg:hidden bg-primary"
+              >
+                <div
+                  aria-hidden="true"
+                  class="jumbotron m-auto h-0.5 w-6 rounded bg-dark transition duration-300"
+                ></div>
+                <div
+                  aria-hidden="true"
+                  class="jumbotron m-auto mt-2 h-0.5 w-6 rounded bg-dark transition duration-300"
+                ></div>
+              </button>
+            </div>
+            <div
+              id="navas"
+              class="fixed inset-0 z-20 h-full w-full items-center justify-center bg-white/90 backdrop-blur-3xl lg:static lg:block lg:h-auto lg:w-auto lg:bg-transparent lg:backdrop-blur-none block"
+            >
+              <ul
+                class="group flex justify-auto sm:justify-center flex-col items-center gap-6 font-serif text-lg text-gray-600 lg:flex-row lg:gap-0 lg:font-sans lg:text-sm md:h-auto sm:h-screen"
+              >
+                <li
+                  class="text-right transition duration-500 group-hover:text-gray-300 lg:text-left"
+                >
+                  <a href="/" class="block py-1 px-6 hover:text-gray-800">
+                    Réalisations
                   </a>
                 </li>
-                <li class="transition duration-500 group-hover:text-gray-300">
-                  <a
-                    href=""
-                    class="block py-1 px-3 hover:text-gray-800"
-                  >
+                <li
+                  class="text-right transition duration-500 group-hover:text-gray-300 lg:text-left"
+                >
+                  <a href="#" class="block py-1 px-6 hover:text-gray-800">
                     Services
                   </a>
                 </li>
-                <li class="transition duration-500 group-hover:text-gray-300">
+                <li
+                  class="text-right transition duration-500 group-hover:text-gray-300 lg:text-left"
+                >
+                  <a href="#" class="block py-1 px-6 hover:text-gray-800">
+                    A propos
+                  </a>
+                </li>
+                <li class="text-right lg:pl-6 lg:text-left">
                   <a
-                    href=""
-                    class="block py-1 px-3 hover:text-gray-800"
+                    href="#"
+                    class="group flex h-9 items-center overflow-hidden rounded border border-gray-400 py-1 px-4 text-sm text-primary transition-all duration-300 hover:rounded-md hover:border-primary hover:bg-primary hover:text-white"
                   >
-                    Contact
+                    <span class="relative flex items-center">
+                      Nous contactez
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth="1.5"
+                        stroke="currentColor"
+                        class="group-hover:translate-x-2 h-4 w-4 translate-x-1 duration-300"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                        ></path>
+                      </svg>
+                    </span>
                   </a>
                 </li>
               </ul>
             </div>
-            <div class="flex flex-col flex-wrap items-center justify-between gap-4 py-6 text-sm text-gray-500 sm:flex-row sm:gap-6">
-              <span class="order-last sm:order-first">
-                Copyright © Bakeli 2024 - Présent
-              </span>
-              <ul class="order-first flex gap-6 sm:order-2">
-                <li>
-                  <a
-                    href="#"
-                    target="_blank"
-                    class="transition duration-300 hover:text-gray-600"
-                  >
-                    Twitter
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    target="_blank"
-                    class="transition duration-300 hover:text-gray-600"
-                  >
-                    Behance
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    target="_blank"
-                    class="transition duration-300 hover:text-gray-600"
-                  >
-                    Instagram
-                  </a>
-                </li>
-              </ul>
-              <a
-                href="/pages/privacy.html"
-                class="order-2 transition duration-300 hover:text-gray-600 sm:order-last"
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="pt-12 sm:pt-20 md:pt-32">
+          <div class="mx-auto max-w-7xl px-4 sm:px-12 lg:px-8 xl:px-16">
+            <h1
+              class="text-4xl font-bold text-gray-800 sm:text-5xl sm:leading-snug lg:text-6xl lg:leading-tight"
+            >
+              Nous développons les meilleurs<span class="text-brown">
+                produits</span
               >
-                Politique de confidentialité
+              pour aider nos clients à construire des entreprises de qualitées.
+            </h1>
+            <div class="mt-12 sm:mt-24">
+              <a
+                href="#"
+                class="relative border-b py-3 font-serif text-xl before:absolute before:inset-x-0 before:bottom-0 before:h-px before:origin-right before:scale-x-0 before:bg-primary before:transition before:duration-300 hover:before:origin-left hover:before:scale-x-100"
+              >
+                <span class="text-gray-600">A propos de nous</span>
               </a>
             </div>
           </div>
-        </footer>
-      </div>
+        </section>
+
+        <section>
+          <div
+            class="my-24 mx-auto px-2 sm:px-4 lg:px-4 xl:max-w-7xl xl:gap-x-24 xl:px-0 2xl:max-w-[90rem]"
+          >
+            <div
+              class="grid gap-4 sm:grid-cols-8 sm:gap-y-12 lg:gap-x-16 lg:gap-y-32"
+            >
+              <a href="/pages/project.html" class="group sm:col-span-4">
+                <div
+                  class="overflow-hidden rounded-md transition-all duration-300 group-hover:rounded-xl"
+                >
+                  <img
+                    class="h-full w-full object-cover brightness-95 transition duration-300 group-hover:scale-105"
+                    src="images/img1.avif"
+                    alt="project cover"
+                    width="1000"
+                    height="1000"
+                  />
+                </div>
+                <div class="p-2 sm:p-4">
+                  <h2
+                    class="text-lg font-medium text-gray-700 duration-300 hover:text-primary"
+                  >
+                    Higher Ground School
+                  </h2>
+                  <span class="mt-1 text-sm text-gray-500">
+                    Network of schools
+                  </span>
+                </div>
+              </a>
+              <a
+                href="#"
+                class="group flex flex-col sm:col-span-4 lg:mt-8 xl:mt-16"
+              >
+                <div class="order-last p-2 sm:order-first sm:p-4">
+                  <h2
+                    class="text-lg font-medium text-gray-700 duration-300 hover:text-primary"
+                  >
+                    Higher Ground School
+                  </h2>
+                  <span class="mt-1 text-sm text-gray-500">
+                    Network of schools
+                  </span>
+                </div>
+                <div
+                  class="overflow-hidden rounded-md transition-all duration-300 group-hover:rounded-xl"
+                >
+                  <img
+                    class="h-full w-full object-cover transition duration-300 group-hover:scale-105"
+                    src="images/img2.avif"
+                    alt="project cover"
+                    width="1380"
+                    height="1380"
+                  />
+                </div>
+              </a>
+              <a href="#" class="group col-span-full lg:col-span-5">
+                <div
+                  class="h-[30rem] overflow-hidden rounded-md transition-all duration-300 group-hover:rounded-xl"
+                >
+                  <img
+                    class="h-full w-full object-cover transition duration-300 group-hover:scale-105"
+                    src="images/img3.avif"
+                    alt="project cover"
+                    width="1800"
+                    height="1201"
+                  />
+                </div>
+                <div class="order-last p-2 sm:order-first sm:p-4">
+                  <h2
+                    class="text-lg font-medium text-gray-700 duration-300 hover:text-primary"
+                  >
+                    Higher Ground School
+                  </h2>
+                  <span class="mt-1 text-sm text-gray-500">
+                    Network of schools
+                  </span>
+                </div>
+              </a>
+              <a
+                href="#"
+                class="group col-span-full flex flex-col sm:row-start-4 lg:col-span-3 lg:row-start-auto"
+              >
+                <div class="order-last p-2 sm:p-4 lg:order-first">
+                  <h2
+                    class="text-lg font-medium text-gray-700 duration-300 hover:text-primary"
+                  >
+                    Higher Ground School
+                  </h2>
+                  <span class="mt-1 text-sm text-gray-500">
+                    Network of schools
+                  </span>
+                </div>
+                <div
+                  class="overflow-hidden rounded-md transition-all duration-300 group-hover:rounded-xl lg:h-[30rem]"
+                >
+                  <img
+                    class="h-full w-full object-cover transition duration-300 group-hover:scale-105"
+                    src="images/img4.avif"
+                    alt="project cover"
+                    width="826"
+                    height="1156"
+                  />
+                </div>
+              </a>
+              <a href="#" class="group sm:col-span-4">
+                <div
+                  class="overflow-hidden rounded-md transition-all duration-300 group-hover:rounded-xl"
+                >
+                  <img
+                    class="h-full w-full object-cover transition duration-300 group-hover:scale-105"
+                    src="images/img5.jpg"
+                    alt="project cover"
+                    width="826"
+                    height="1239"
+                  />
+                </div>
+                <div class="p-2 sm:p-4">
+                  <h2
+                    class="text-lg font-medium text-gray-700 duration-300 hover:text-primary"
+                  >
+                    Higher Ground School
+                  </h2>
+                  <span class="mt-1 text-sm text-gray-500">
+                    Network of schools
+                  </span>
+                </div>
+              </a>
+              <a
+                href=""
+                class="group flex flex-col sm:col-span-4 lg:mt-8 xl:mt-16"
+              >
+                <div class="order-last p-2 sm:order-first sm:p-4">
+                  <h2
+                    class="text-lg font-medium text-gray-700 duration-300 hover:text-primary"
+                  >
+                    Higher Ground School
+                  </h2>
+                  <span class="mt-1 text-sm text-gray-500">
+                    Network of schools
+                  </span>
+                </div>
+                <div
+                  class="overflow-hidden rounded-md transition-all duration-300 group-hover:rounded-3xl"
+                >
+                  <img
+                    class="h-full w-full object-cover transition duration-300 group-hover:scale-105"
+                    src="images/img6.avif"
+                    alt="project cover"
+                    width="826"
+                    height="1239"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="border-t border-b border-b-gray-100 py-32 group relative"
+        >
+          <div class="mx-auto max-w-7xl px-4 sm:px-12 lg:px-8 xl:px-16">
+            <h2 class="text-center text-lg font-medium text-gray-600">
+              Parlons de votre projet
+            </h2>
+            <a
+              href=""
+              class="relative mt-4 block text-center text-5xl font-thin transition-all duration-500 hover:tracking-wide sm:text-7xl"
+            >
+              <span
+                class="font-serif text-gray-700 transition duration-700 hover:bg-gradient-to-r hover:from-secondary hover:to-primary hover:bg-clip-text hover:text-transparent group-hover:text-[#5B483D]"
+              >
+                Creative@design.io
+              </span>
+            </a>
+          </div>
+        </section>
+      </main>
+      <footer class="bg-white pt-6">
+        <div class="mx-auto max-w-7xl divide-y px-4 sm:px-12 lg:px-8 xl:px-16">
+          <div
+            class="flex flex-col items-center justify-between gap-6 pb-6 sm:flex-row"
+          >
+            <a href="/" class="block w-max">
+              <img
+                class="h-8 w-8"
+                src="images/ALT.avif"
+                alt="alt img"
+                width="120"
+                height="120"
+              />
+            </a>
+            <ul
+              class="group items-center justify-center gap-0 text-center text-sm text-gray-600 sm:flex lg:gap-0"
+            >
+              <li class="transition duration-500 group-hover:text-gray-300">
+                <a href="/" class="block py-1 px-3 hover:text-gray-800">
+                  Réalisations
+                </a>
+              </li>
+              <li class="transition duration-500 group-hover:text-gray-300">
+                <a href="" class="block py-1 px-3 hover:text-gray-800">
+                  Services
+                </a>
+              </li>
+              <li class="transition duration-500 group-hover:text-gray-300">
+                <a href="" class="block py-1 px-3 hover:text-gray-800">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="flex flex-col flex-wrap items-center justify-between gap-4 py-6 text-sm text-gray-500 sm:flex-row sm:gap-6"
+          >
+            <span class="order-last sm:order-first">
+              Copyright © Bakeli : Red Team 2024 - Présent
+            </span>
+            <ul class="order-first flex gap-6 sm:order-2">
+              <li>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="transition duration-300 hover:text-gray-600"
+                >
+                  Twitter
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="transition duration-300 hover:text-gray-600"
+                >
+                  Behance
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  target="_blank"
+                  class="transition duration-300 hover:text-gray-600"
+                >
+                  Instagram
+                </a>
+              </li>
+            </ul>
+            <a
+              href="/pages/privacy.html"
+              class="order-2 transition duration-300 hover:text-gray-600 sm:order-last"
+            >
+              Politique de confidentialité
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
